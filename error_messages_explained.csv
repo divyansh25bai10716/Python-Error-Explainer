@@ -1,0 +1,96 @@
+sr_no,error_message,explanation
+1,ZeroDivisionError: float division by zero,Floating-point division by zero is also not allowed. Make sure the denominator is non-zero.
+2,TypeError: unsupported operand type(s) for +: 'int' and 'str',You are trying to add a number and a string. Convert the string '5' to an integer using int().
+3,ValueError: math domain error,You cannot take the square root of a negative number with math.sqrt(). Use a non-negative number.
+4,AttributeError: 'tuple' object has no attribute 'append',Tuples are immutable — they have no append(). Use a list instead if you need to add items.
+5,OverflowError: math range error,math.exp(1000) produces a number too large for Python to store as a float. Use a smaller value.
+6,FileNotFoundError: [Errno 2] No such file or directory,The file path does not exist or is wrong. Double-check the full path and that the file is actually there.
+7,IndexError: list index out of range,The list is empty — there are no items to access. Add elements to the list first.
+8,ValueError: substring not found,index() raises an error if the character is not found. Use find() instead — it returns -1 when not found.
+9,RecursionError: maximum recursion depth exceeded in comparison,"The function has no base case, so it recurses forever. Add if n <= 1: return n to stop the recursion."
+10,"TypeError: list indices must be integers or slices, not str","List indices must be integers (0, 1, 2...). You used a string 'a' as the index. Use a number instead."
+11,AttributeError: 'list' object has no attribute 'strip',"strip() removes whitespace from strings, not lists. Call it on the individual string: data[0].strip()"
+12,ValueError: not enough values to unpack (expected 3),You have only 2 values but 3 variables. Remove one variable so they match.
+13,AttributeError: 'str' object has no attribute 'append',Strings do not have an append() method — that is for lists. Use '+' or f-strings to combine strings.
+14,TypeError: 'int' object is not iterable,You cannot loop over a plain number. Use range(5) to generate a sequence of numbers from 0 to 4.
+15,SyntaxError: invalid syntax,"You used '=' (assignment) instead of '==' (comparison) inside an if statement. In Python, '==' checks if two values are equal."
+16,TypeError: 'NoneType' object is not subscriptable,"'result' is None (has no value), so you cannot index into it with [0]. Make sure the variable holds an actual list."
+17,UnboundLocalError: local variable 'x' referenced before assignment,"Inside the function, Python sees 'x = 20' and treats x as local. But you print it before assigning. Move the assignment before the print."
+18,IndexError: string index out of range,The string 'hi' has only 2 characters (indices 0 and 1). Index 5 is out of range.
+19,AttributeError: 'dict' object has no attribute 'add',Dicts do not have add(). add() is a set method. Use d['key'] = value to add to a dict.
+20,StopIteration,"next() was called more times than there are items. Use a for loop instead, which handles the end automatically."
+21,RecursionError: maximum recursion depth exceeded,The function calls itself forever with no stopping condition. Add a base case that stops the recursion.
+22,NameError: name 'pi' is not defined,"'pi' is not a built-in Python name. Import the math module and use math.pi, or write 3.14159 yourself."
+23,SyntaxError: 'continue' not properly in loop,'continue' only works inside a loop. Move it inside a for or while loop.
+24,TypeError: '<' not supported between instances of 'str' and 'int',input() always returns a string. Convert it to int first before comparing with a number.
+25,TypeError: 'tuple' object does not support item assignment,Tuples are immutable — you cannot change their items. Use a list [] instead of a tuple () if you need to modify items.
+26,ImportError: cannot import name 'randint' from 'math',"randint is in the 'random' module, not 'math'. Use: from random import randint"
+27,NotImplementedError,The base class method intentionally raises NotImplementedError to force subclasses to override it. Create a subclass that implements speak().
+28,TypeError: zip argument #1 must support iteration,"zip() needs iterables (lists, tuples, etc.) — not plain numbers. Wrap 5 in a list: [5]."
+29,SyntaxError: keyword can't be an expression,'return' is a reserved keyword in Python. You cannot use it as a parameter name. Choose a different name.
+30,TypeError: can't multiply sequence by non-int of type 'float',"You can repeat a string with *, but only using a whole number. 1.5 is a float — use int(1.5) = 1 or just write 2."
+31,ModuleNotFoundError: No module named 'pandas',pandas is not installed. Install it with: pip install pandas
+32,NameError: name 'pritn' is not defined,'pritn' is a typo of the built-in function 'print'. Python cannot find it because the name is wrong.
+33,ValueError: invalid literal for float(): 'hello',float() can only convert numeric strings like '3.14'. 'hello' has no numeric value.
+34,AttributeError: 'NoneType' object has no attribute 'lower',"'name' is None, which has no methods. Make sure the variable holds a string before calling string methods."
+35,IndexError: pop from empty list,"pop() removes the last item, but the list is empty. Add items before calling pop()."
+36,SyntaxError: 'break' outside loop,'break' can only be used inside a for or while loop. It is not valid outside of a loop.
+37,TypeError: greet() takes 0 positional arguments but 1 was given,"The function greet() was defined with no parameters, but you are passing 'Alice'. Add a parameter to the function."
+38,KeyError: 'score',You cannot add to a key that does not exist yet. Initialize 'score' to 0 first.
+39,ValueError: list.remove(x): x not in list,remove() fails if the item is not in the list. Check with 'in' first before removing.
+40,TypeError: object of type 'int' has no len(),"len() works on sequences like lists and strings, not on plain numbers. Use a list if you want to count items."
+41,ValueError: invalid literal for int() with base 10: 'abc',"int() can only convert strings that look like numbers. 'abc' is not a number, so it fails."
+42,TypeError: unhashable type: 'list',Dictionary keys must be hashable (immutable). Lists cannot be keys — use a tuple instead.
+43,NameError: name 'x' is not defined,You are using variable 'x' before creating it. Always assign a value to a variable before using it.
+44,KeyError: 'age',"The key 'age' does not exist in the dictionary. Either add it, or use person.get('age') which returns None instead of crashing."
+45,ZeroDivisionError: division by zero,You cannot divide any number by zero — it is mathematically undefined. Make sure the denominator is never 0.
+46,TypeError: not enough arguments for format string,"The format string expects 2 values but only 1 was given. Provide both as a tuple: ('a', 'b')."
+47,NameError: name 'Ture' is not defined,'Ture' is a typo. The correct keyword is 'True' with a capital T and lowercase 'rue'.
+48,PermissionError: [Errno 13] Permission denied,You do not have permission to write to system files. Write to a file in your own directory instead.
+49,NameError: name 'Flase' is not defined,"'Flase' is a typo. The correct Python keyword is 'False' (capital F, rest lowercase)."
+50,FileNotFoundError: [Errno 2] No such file or directory: 'data.txt',Python cannot find 'data.txt'. Check that the file exists and that you are in the correct folder.
+51,ModuleNotFoundError: No module named 'numpy',The 'numpy' library is not installed. Open your terminal and run: pip install numpy
+52,ValueError: I/O operation on closed file,You closed the file then tried to read it. Use 'with open(...)' which keeps the file open while you work with it.
+53,KeyError: 'Name',Dictionary keys are case-sensitive. 'Name' and 'name' are different keys. Use the exact key that was set.
+54,TypeError: 'float' object cannot be interpreted as an integer,range() only accepts whole numbers (integers). Replace 1.5 with an integer like 1 or 2.
+55,TypeError: 'int' object is not callable,"'x' is a number, not a function. You cannot call it with (). Define it as a function using 'def' if you want to call it."
+56,TypeError: can only concatenate str (not 'int') to str,You cannot join a string and a number directly. Convert the number to a string first using str().
+57,IndentationError: tabs and spaces mixed,You mixed a tab and spaces for indentation. Pick one style (4 spaces is standard) and use it consistently.
+58,AttributeError: 'list' object has no attribute 'keys',"keys() is a dictionary method. Lists do not have it. Use a dict, or iterate over the list directly."
+59,SyntaxError: invalid character in identifier,"'£' is not a valid Python character in code. Remove it — only use standard letters, numbers, and underscores."
+60,NameError: name 'nul' is not defined,Python uses 'None' (not 'null' or 'nul') to represent an empty or missing value.
+61,TypeError: 'builtin_function_or_method' object is not subscriptable,"print is a function — call it with parentheses (), not square brackets []. Square brackets are for indexing lists."
+62,ZeroDivisionError: integer division or modulo by zero,Even integer (floor) division by zero is not allowed. Check that your divisor is non-zero.
+63,AssertionError,"assert checks a condition and raises AssertionError if it is False. Here x is 5, not 10, so the assertion fails."
+64,TypeError: argument of type 'int' is not iterable,"'in' checks membership inside a sequence (list, string, etc.), not inside a plain number."
+65,TypeError: 'str' object does not support item assignment,Strings in Python are immutable — you cannot change individual characters. Create a new string instead.
+66,SyntaxError: EOL while scanning string literal,You opened a string with a quote but never closed it. Every string must start and end with matching quotes.
+67,SyntaxError: 'return' outside function,'return' can only be used inside a function. Wrap your code in a def block.
+68,IndentationError: expected an indented block,The code inside a function must be indented (add 4 spaces or 1 tab). Python uses indentation to group code.
+69,SyntaxError: invalid syntax — missing else,A ternary (inline if) expression requires an else clause. Write: value_if_true if condition else value_if_false
+70,ValueError: invalid separator,"int() does not understand comma-formatted numbers. Remove the comma first: int('1,000'.replace(',',''))"
+71,AttributeError: 'list' object has no attribute 'upper',"upper() is a string method, not a list method. Call it on the individual string inside the list."
+72,ValueError: could not convert string to float: 'N/A','N/A' cannot be converted to a number. Only numeric strings like '3.14' or '5' work with float().
+73,SyntaxError: cannot assign to literal,"You have the assignment backwards. The variable name goes on the left, the value on the right: x = 5"
+74,TypeError: '<=' not supported between instances of 'str' and 'float',You are comparing a string with a float. Convert the string to a float first: float('9.5').
+75,MemoryError,"You are trying to create a list with 1 trillion items, which uses more RAM than your computer has. Use a much smaller size."
+76,NameError: name 'self' is not defined,"'self' is only available inside class methods. Outside the class, create an instance (c = Cat()) and use that."
+77,ValueError: too many values to unpack (expected 2),You have 3 values in the list but only 2 variables to unpack into. Add a third variable 'c'.
+78,TypeError: unsupported operand type(s) for -: 'str' and 'int',You cannot subtract an integer from a string. Convert the string '10' to an integer first using int().
+79,KeyError: 0,"This dictionary uses string keys ('a', 'b'), not integer keys. Use d['a'] not d[0]."
+80,AttributeError: 'str' object has no attribute 'sort',Strings do not have a sort() method. Use sorted(s) which returns a sorted list of characters.
+81,AttributeError: 'int' object has no attribute 'split',split() is a string method. Integers do not have it. Convert to a string first or use a string variable.
+82,TypeError: unsupported operand type(s) for *: 'str' and 'float',"You can repeat a string with *, but only with a whole number (integer), not a decimal like 2.5."
+83,ModuleNotFoundError: No module named 'mymodule',"Python cannot find 'mymodule'. Either it is misspelled, not installed, or not in the same directory."
+84,NameError: name 'total' is not defined,'total' is a local variable inside the function — it does not exist outside it. Return the value and store it.
+85,NameError: name 'my_var' is not defined,Python is case-sensitive and underscore-sensitive. 'myvar' and 'my_var' are different names.
+86,AttributeError: 'int' object has no attribute 'replace',"replace() is a string method. Convert the number to a string first: str(123).replace('1','9')"
+87,"TypeError: sequence item 0: expected str instance, int found","join() only works with strings. Convert each number to a string first, or use: ' '.join(str(i) for i in [1,2,3])"
+88,NameError: name 'true' is not defined,Python is case-sensitive. 'true' does not exist — use 'True' with a capital T.
+89,KeyError: 'city',"'city' is not a key in the dict. Use .get('city', default) to safely access missing keys without crashing."
+90,NameError: name 'result' is not defined,"'result' is defined after it is used. In Python, you must define a variable before you can use it."
+91,IndentationError: unexpected indent,The print statement has extra indentation but it is not inside any block. Remove the extra spaces.
+92,IndentationError: unindent does not match any outer indentation level,'print done' has 2 spaces but the loop body has 4. Be consistent and use the same number of spaces throughout.
+93,ValueError: invalid base,The second argument to int() is the base. Valid bases are 2 to 36. 99 is not valid. Use 10 for decimal.
+94,SyntaxError: invalid syntax — missing comma,Items in a tuple (or list) must be separated by commas. You are missing the commas between the numbers.
+95,RuntimeError: dictionary changed size during iteration,You cannot delete keys from a dictionary while iterating over it. Convert keys to a list first with list(d.keys()).
