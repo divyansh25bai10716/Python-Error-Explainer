@@ -12,16 +12,16 @@ Beginner programmers often struggle to understand Python error messages. This pr
 
 ## Features
 
-- Offline project
-- Dataset-based error explanations
-- Loop-based matching
-- Easy to expand dataset
+1. Offline project
+2. Dataset-based error explanations
+3. Loop-based matching
+4. Easy to expand dataset
 
 ## Technologies Used
 
-- Python
-- Pandas
-- CSV Dataset
+1. Python
+2. Pandas
+3. CSV Dataset
 
 ## How It Works
 
