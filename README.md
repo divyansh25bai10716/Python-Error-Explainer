@@ -21,6 +21,7 @@ Beginner programmers often struggle to understand Python error messages. This pr
 1. Python
 2. Pandas
 3. CSV Dataset
+4. VS Code
 
 ## How It Works
 
@@ -33,5 +34,9 @@ Beginner programmers often struggle to understand Python error messages. This pr
 
 Install dependencies:
 1. pip install pandas
+
+## Author
+Divyansh Jadoun
+25BAI10716
 
    
