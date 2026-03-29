@@ -14,6 +14,7 @@ def explain_error(user_error):
     return "New error detected — explanation not available."
 
 print("Python Error Explainer")
+print("type QUIT if no error")
 
 while True:
     
